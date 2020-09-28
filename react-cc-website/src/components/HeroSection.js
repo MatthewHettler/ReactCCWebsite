@@ -20,7 +20,33 @@ function HeroSection({
       <div
         className={lightBg ? "home__hear-section" : "home__hero-section darkBg"}
       >
-        <h1>test</h1>
+        <div className="container">
+          <div
+            className="row home__hero-row"
+            style={{
+              display: "flex",
+              flexDirection: imgStart === "start" ? "row-reverse" : "row",
+            }}
+          >
+            <div className="col">
+              <div className="home__hero-text-wrapper">
+                <div className="top-line">{topLine}</div>
+                <h1 className={lightText ? "heading" : "heading dark"}>
+                  {headLine}
+                </h1>
+                <p
+                  className={
+                    lightTextDesc
+                      ? "home__hero-subtitle"
+                      : "home__hero-subtitle dark"
+                  }
+                >
+                  {description}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
