@@ -8,7 +8,7 @@ function HeroSection({
   topLine,
   lightText,
   lightTextDesc,
-  headline,
+  headLine,
   description,
   buttonLabel,
   img,
@@ -43,6 +43,16 @@ function HeroSection({
                 >
                   {description}
                 </p>
+                <Link to="/sign-up">
+                  <Button buttonSize="btn--wide" buttonColor="blue">
+                    {buttonLabel}
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="col">
+              <div className="home__hero-img-wrapper">
+                <img src={img} alt={alt} className="home__hero-img" />
               </div>
             </div>
           </div>
