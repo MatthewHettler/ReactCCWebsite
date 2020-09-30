@@ -1,14 +1,14 @@
 import React from "react";
-import { Button } from "./Button";
-import { Link } from "react-rout-dom";
 import "./HeroSection.css";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 function HeroSection({
   lightBg,
   topLine,
   lightText,
   lightTextDesc,
-  headLine,
+  headline,
   description,
   buttonLabel,
   img,
@@ -18,7 +18,7 @@ function HeroSection({
   return (
     <>
       <div
-        className={lightBg ? "home__hear-section" : "home__hero-section darkBg"}
+        className={lightBg ? "home__hero-section" : "home__hero-section darkBg"}
       >
         <div className="container">
           <div
@@ -32,7 +32,7 @@ function HeroSection({
               <div className="home__hero-text-wrapper">
                 <div className="top-line">{topLine}</div>
                 <h1 className={lightText ? "heading" : "heading dark"}>
-                  {headLine}
+                  {headline}
                 </h1>
                 <p
                   className={
