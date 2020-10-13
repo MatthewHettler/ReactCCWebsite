@@ -59,8 +59,44 @@ function Footer() {
             <Link to="/">Agency</Link>
             <Link to="/">Influencer</Link>
           </div>
+          <div className="footer-link-items">
+            <h2>Social Media</h2>
+            <Link to="/">Instagram</Link>
+            <Link to="/">Facebook</Link>
+            <Link to="/">YouTube</Link>
+            <Link to="/">Twitter</Link>
+          </div>
         </div>
       </div>
+      <section className="social-media">
+        <div className="social-media-wrap">
+          <div className="footer-logo">
+            <Link to="/" className="social-logo">
+              <MdFingerprint className="navbar-icon" />
+              LAVISH
+            </Link>
+          </div>
+          <small className="website-rights">LAVISH © 2020</small>
+          <div className="social-icons">
+            <Link
+              className="social-icon-link"
+              to="/"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              className="social-icon-link"
+              to="/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
