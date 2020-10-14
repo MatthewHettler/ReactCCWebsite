@@ -5,6 +5,7 @@ import { Button } from './Button';
 import { BsXDiamondFill } from 'react-icons/bs'
 import { GiCrystalize } from 'react-icons/gi'
 import { IconContext } from 'react-icons/lib'
+import './Pricing.css';
 
 function Pricing() {
     return (
